@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Rubik", sans-serif;
+}
+.attribution {
+     font-size: 11px;
+     text-align: center;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+
+body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+}
+.phone {
+     background-color: #fff;
+     border-radius: 10px;
+     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+     padding: 10px;
+     width: 280px;
+     display: inline-block;
+}
+main {
+     display: flex;
+     width: 80%;
+     margin-top: 50px;
+     display: flex;
+     gap: 4em;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+}
+
+.header {
+     display: flex;
+     background: linear-gradient(
+          to right,
+          hsl(264, 100%, 61%),
+          hsl(293, 100%, 63%)
+     );
+     border-radius: 20px 20px 5px 5px;
+     padding: 25px 10px 0px 10px;
+
+     gap: 0.5em;
+     height: 60px;
+     position: relative;
+}
+.header::after {
+     content: "";
+     position: absolute;
+     width: 140px;
+     height: 20px;
+     top: -1px;
+     left: 65px;
+     background: #fff;
+     border: 10px;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+}
+.images > img {
+     max-width: 50px;
+     border-radius: 12px;
+}
+
+.images {
+     transform: translateX(4rem);
+     margin-top: 14px;
+}
+.outgoing-text {
+     transform: translateX(2.7rem);
+     width: 80%;
+     background-color: #fff;
+     color: hsl(271, 15%, 43%);
+     padding: 8px;
+     border-radius: 16px 16px 16px 4px;
+     margin-bottom: 8px;
+     font-size: 11px;
+}
+.fa-angle-left {
+     color: #fff;
+     font-size: 11px;
+     margin-top: 9px;
+}
+.fa-ellipsis-v {
+     color: #fff;
+     font-size: 11px;
+     margin-top: 10px;
+     transform: translate(7em);
+}
+.fa-circle-thin {
+     color: hsl(289, 100%, 72%);
+}
+.price-details {
+     width: 90%;
+     color: #fff;
+     background: linear-gradient(
+          to right,
+          hsl(293, 100%, 63%),
+          hsl(264, 100%, 61%)
+     );
+     display: flex;
+     gap: 0.5em;
+     padding: 8px;
+     border-radius: 10px 10px 10px 2px;
+     margin-bottom: 8px;
+     font-size: 11px;
+     position: relative;
+}
+
+.body {
+     padding: 10px;
+}
+.content {
+     background-color: hsl(270, 20%, 96%);
+     border-radius: 20px 20px 10px 10px;
+}
+.profile-pic {
+     border-radius: 50%;
+     max-height: 30px;
+     border: 1px solid #fff;
+}
+.incoming-text {
+     color: hsl(276, 55%, 52%);
+     background-color: #ddd;
+     padding: 8px;
+     border-radius: 16px 16px 16px 4px;
+     margin-bottom: 7px;
+     width: 72%;
+}
+.incoming-text > p {
+     font-size: 11px;
+}
+.price-details > .time {
+     font-size: 11px;
+}
+.input-field {
+     background-color: #fff;
+     padding: 7px;
+     display: flex;
+     font-size: 14px;
+     position: relative;
+     border-radius: 20px;
+     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+     width: 80%;
+     font-size: 18px;
+     color: hsl(270, 7%, 64%);
+}
+.submit-btn {
+     position: absolute;
+     right: 10px;
+     color: hsl(271, 36%, 24%);
+}
+.booking {
+     margin-bottom: 25px;
+     font-weight: 700;
+     font-size: 33px;
+     color: hsl(271, 36%, 24%);
+}
+.name {
+     color: #fff;
+     font-weight: 500;
+     font-size: 12px;
+     line-height: 19px;
+}
+.status {
+     font-size: 9px;
+     color: hsl(276, 100%, 81%);
+}
+.price {
+     font-weight: 500;
+     font-size: 15px;
+}
+.no {
+     position: absolute;
+     right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+     main {
+          flex-direction: column;
+          gap: 1.5em;
+     }
+
+     .booking {
+          text-align: center;
+          margin-bottom: 0px;
+          margin-top: 0px;
+     }
+     .info {
+          width: 80%;
+          margin: 10px auto;
+          font-size: 17px;
+          text-align: center;
+     }
+}
